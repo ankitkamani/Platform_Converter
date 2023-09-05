@@ -24,7 +24,7 @@ class SettingProvider extends ChangeNotifier {
 
   void imagePick() async {
     try {
-      image = await picker.pickImage(source: ImageSource.gallery);
+      image = await picker.pickImage(source: ImageSource.camera);
       if (image!.path.isEmpty) {
         isImageEmpty = true;
       } else {
